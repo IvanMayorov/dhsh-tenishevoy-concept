@@ -405,5 +405,5 @@ b,strong{font-weight:600}
 /* акварель здания: с воздухом, без обрезки */
 .bld{height:auto;aspect-ratio:2.6/1;border-radius:0;overflow:visible;background:none}
 .bld img{object-fit:contain}
-.bld{aspect-ratio:2600/1120}
+.bld{aspect-ratio:2600/1180}
 .bld + .facts{margin-top:clamp(56px,calc(40px + 1.2vw),80px)}
