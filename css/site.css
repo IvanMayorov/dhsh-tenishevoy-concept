@@ -401,3 +401,7 @@ b,strong{font-weight:600}
 .hero .btn-ghost,.cta-band .btn-ghost{border-color:rgba(255,255,255,.55)}
 .hero .btn-ghost:hover,.cta-band .btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.08)}
 .btn-blue:hover{background:var(--blue-d)}
+
+/* акварель здания: с воздухом, без обрезки */
+.bld{height:auto;aspect-ratio:2.6/1;border-radius:0;overflow:visible;background:none}
+.bld img{object-fit:contain}
