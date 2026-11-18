@@ -407,3 +407,6 @@ b,strong{font-weight:600}
 .bld img{object-fit:contain}
 .bld{aspect-ratio:2600/1180}
 .bld + .facts{margin-top:clamp(56px,calc(40px + 1.2vw),80px)}
+/* портреты педагогов */
+.t .ph{background:#F3EEE3}
+.t .ph img{width:100%;height:100%;object-fit:cover;object-position:50% 20%;mix-blend-mode:multiply}
