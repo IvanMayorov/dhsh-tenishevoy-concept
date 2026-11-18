@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Демо админки | ДХШ им. М. К. Тенишевой</title>
+    <link rel="icon" href="../img/emblem.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="admin.css">
+    <script src="admin.js" defer></script>
+</head>
+<body>
+    <a class="skip" href="#main">Перейти к содержимому</a>
+    <header class="topbar">
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-controls="sidebar" aria-expanded="false">Разделы</button>
+        <a class="brand" href="#schedule" aria-label="ДХШ им. М. К. Тенишевой — к расписанию">
+            <img src="wordmark.svg" width="180" height="66" alt="Детская художественная школа им. М. К. Тенишевой">
+        </a>
+        <a class="site-link" href="../">На сайт</a>
+    </header>
+    <div class="workspace">
+        <aside class="sidebar" id="sidebar">
+            <nav aria-label="Разделы админки">
+                <ul class="menu"><li><a href="#applications">Заявки</a></li></ul>
+                <h2>Материалы сайта</h2>
+                <ul class="menu">
+                    <li><a href="#all">Все материалы</a></li>
+                    <li><a href="#programs">Программы</a></li>
+                    <li><a href="#news">Новости</a></li>
+                    <li><a href="#teachers">Педагоги</a></li>
+                    <li><a href="#schedule">Расписание</a></li>
+                    <li><a href="#gallery">Галерея и выставки</a></li>
+                    <li><a href="#documents">Документы</a></li>
+                    <li><a href="#pages">Страницы</a></li>
+                    <li><a href="#information">Сведения об организации</a></li>
+                </ul>
+                <div id="management">
+                    <h2>Управление</h2>
+                    <ul class="menu">
+                        <li><a href="#access">Доступы</a></li>
+                        <li><a href="#review">На проверке</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </aside>
+        <main id="main" tabindex="-1">
+            <div class="demo-bar">
+                <p><strong>Демо админки.</strong> Изменения сохраняются в этой вкладке.</p>
+                <label>Роль <select id="role">
+                    <option value="editor">Редактор</option>
+                    <option value="admin" selected>Администратор</option>
+                </select></label>
+            </div>
+            <div class="page-header">
+                <h1 id="page-title" tabindex="-1">Расписание</h1>
+                <button class="primary" id="create" type="button">Добавить занятие</button>
+            </div>
+            <div id="content"></div>
+            <p class="notice" id="notice" role="status" hidden></p>
+        </main>
+    </div>
+    <dialog id="dialog" aria-labelledby="dialog-title">
+        <form id="edit-form">
+            <div class="dialog-head">
+                <h2 id="dialog-title"></h2>
+                <button type="button" id="close-dialog">Закрыть</button>
+            </div>
+            <div class="fields" id="fields"></div>
+            <div class="dialog-actions" id="dialog-actions"></div>
+        </form>
+    </dialog>
+</body>
+</html>
