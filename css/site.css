@@ -379,3 +379,12 @@ b,strong{font-weight:500}
 /* TikTok Sans чуть шире обычного */
 html{font-stretch:112%}
 .hero h1 em{font-weight:300}
+
+/* иерархия: контраст весов */
+.hero h1,.pg-head h1,h2.sec{font-weight:700;letter-spacing:-.03em}
+.hero h1 em{font-weight:300}
+.heritage h3,.cta-band h3{font-weight:650}
+.dep h3,.card h3,.panel h3,.docs h3,.signup h3,.route h3,.bells h3{font-weight:600}
+.must h3,.eyebrow{font-weight:600}
+nav.main,.btn,.link,.more{font-weight:550}
+b,strong{font-weight:600}
